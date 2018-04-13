@@ -6,8 +6,10 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.EntityFrameworkCore;
+using MvcMovie.Models;
 
-namespace CIDM3312_Final_Project
+namespace MvcMovie
 {
     public class Startup
     {
@@ -22,8 +24,8 @@ namespace CIDM3312_Final_Project
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
-            services.AddDbContext<FinalContext>(options =>
-            options.UseSqlServer(Configuration.GetConnectionString("FinalContext")));
+          services.AddDbContext<MvcMovieContext>(options =>
+                  options.UseSqlite("Data Source=MvcMovie.db"));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -40,12 +42,12 @@ namespace CIDM3312_Final_Project
 
             app.UseStaticFiles();
 
-            app.UseMvc(routes =>
-            {
-                routes.MapRoute(
-                    name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
-            });
+           app.UseMvc(routes =>
+{
+    routes.MapRoute(
+        name: "default",
+        template: "{controller=Home}/{action=Index}/{id?}");
+});
         }
     }
 }

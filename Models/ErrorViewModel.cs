@@ -1,6 +1,6 @@
 using System;
 
-namespace CIDM3312_Final_Project.Models
+namespace MvcMovie.Models
 {
     public class ErrorViewModel
     {

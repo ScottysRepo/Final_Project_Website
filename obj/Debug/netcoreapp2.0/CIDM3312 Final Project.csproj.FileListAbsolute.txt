@@ -1,0 +1,4 @@
+C:\Users\ss978823\Desktop\Final_Project_Website-master\obj\Debug\netcoreapp2.0\CIDM3312 Final Project.csprojResolveAssemblyReference.cache
+C:\Users\ss978823\Desktop\Final_Project_Website-master\obj\Debug\netcoreapp2.0\CIDM3312 Final Project.csproj.CoreCompileInputs.cache
+C:\Users\ss978823\Desktop\Final_Project_Website-master\obj\Debug\netcoreapp2.0\CIDM3312 Final Project.AssemblyInfoInputs.cache
+C:\Users\ss978823\Desktop\Final_Project_Website-master\obj\Debug\netcoreapp2.0\CIDM3312 Final Project.AssemblyInfo.cs

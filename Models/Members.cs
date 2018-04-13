@@ -8,7 +8,7 @@ namespace CIDM3312_Final_Project.Models
         public string firstName{ get; set; }
         public string lastName{ get; set; }
         public string standing{ get; set; }
-                public string classification{ get; set; }
+        public string classification{ get; set; }
 
 
         public string major{ get; set; }
